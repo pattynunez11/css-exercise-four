@@ -1,4 +1,74 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+  width: 100%;
+}
+
+h1 {
+  font-family:trebuchet, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  width:100%;
+  margin: 0, auto;
+}
+
+.preview{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 300px;
+  width: 100%;
+  margin: 0 0 5%;
+}
+
+.preview h1 {
+    font-family: times, serif;
+    font-size: 2em;
+    text-align: left;
+    padding: 40px;
+}
+
+.preview.baku {
+  background-image: url(../images/baku.jpg);
+}
+
+.preview.london {
+  background-image: url(../images/london.png);
+}
+
+.preview.madrid {
+  background-image: url(../images/madrid.jpg);
+}
+
+.preview.rome {
+  background-image: url(../images/rome.jpg);
+}
+
+/* Query for TABLET */
+@media screen and (min-width: 575px){
+  .container {
+   padding: 0 60px;
+  }
+   .preview {
+    width: 48%;
+    height: 200px;
+    float: left;
+    margin: 1%;
+  }
+}
+/* Query for LAPTOPS (min-width: 991px) */
+@media screen and (min-width: 991px){
+   .preview {
+    width: 23%;
+    height: 200px;
+  }
 }
